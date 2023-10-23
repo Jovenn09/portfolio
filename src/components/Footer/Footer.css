@@ -1,0 +1,57 @@
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+  margin: 0;
+}
+
+
+div#content {
+  flex-grow: 1;
+}
+
+.footer {
+  background-color: rgb(247, 247, 247);
+  color: black;
+  padding: 1rem 0; 
+  text-align: center;
+  margin-top: auto; 
+
+}
+
+.logo img{
+  display: inline-block;
+  width: 160px;
+  margin-top: 10px;
+}
+
+
+.school-name {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px; 
+}
+
+.college-name {
+  display: block;
+  font-size: 16px;
+  color: #666;
+  margin-top: 5px; 
+}
+.bottom-footer {
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+  padding-top: 5px; 
+  text-align: center;
+}
+
+.bottom-footer p {
+  font-size: 12px;
+  margin: 0; 
+} 
+
+
+
+

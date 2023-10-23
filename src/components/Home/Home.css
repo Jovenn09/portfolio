@@ -1,0 +1,271 @@
+
+#home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.home-container {
+  display: flex;
+  align-items: center;
+}
+
+.description {
+  font-weight: lighter;
+  font-size: 20px;
+  max-width: 600px; 
+}
+
+.left-content {
+  padding-right: 20px;
+}
+
+.profile-picture {
+  width: 300px;
+  height: auto;
+  border-radius: 50%;
+  border-right: 4px solid rgb(	0,0,128); 
+  border-bottom: 1px solid rgb(	0,0,128); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; 
+  padding: 8px; 
+}
+
+
+button {
+  background-color: whitesmoke;
+  border: none;
+  color: black;
+  height: 50px;
+  width: 150px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Poppins";
+}
+
+button:hover {
+  background-color: rgb(	0,0,128);
+  color: white;
+}
+
+.social-links{
+  display: flex;
+  gap: 5px;
+  
+}
+.social-links a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  color: #000000;
+  text-align: center;
+  line-height: 43px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  font-size: 20px;
+}
+.social-links a:hover {
+  background-color: rgb(0, 0, 128);
+  color: white;
+}
+
+.name {
+  color: rgb(	0,0,128);
+  
+}
+
+.wave-emoji {
+  max-width: 60px; 
+  height: auto; 
+  vertical-align: middle; 
+  margin-left: 10px;
+}
+.wave-animation {
+  animation: wave 2s infinite;
+}
+
+.wave-animation {
+  animation: wave 2s infinite;
+  transform-origin: bottom;
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(0) translateX(-5px) rotate(-10deg);
+  }
+  50% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+  }
+  75% {
+    transform: translateY(0) translateX(5px) rotate(10deg);
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .home-container {
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    margin-top: 150px; 
+   
+  }
+
+  .left-content {
+    padding-right: 0; 
+  }
+
+  .profile-picture {
+    width: 200px; 
+    margin-bottom: 20px; 
+    order: -1; 
+  }
+
+  .full-name {
+    font-size: 25px; 
+    margin-bottom: 10px; 
+  }
+
+  .designation {
+    font-size: 20px; 
+    margin-bottom: 10px; 
+  }
+
+  .description {
+    font-size: 20px; 
+    max-width: 400px; 
+  }
+
+  .social-links a {
+    font-size: 20px; 
+  }
+  .wave-emoji {
+    max-width: 30px; 
+    height: auto; 
+    vertical-align: middle; 
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+
+  .profile-picture {
+    width: 120px;
+    margin-bottom: 10px;
+  }
+
+  .name {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .designation {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .description {
+    font-size: 14px;
+    max-width: 300px;
+  }
+
+  .social-links a {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .wave-emoji {
+    max-width: 20px;
+    margin-left: 5px;
+  }
+
+  button {
+    height: 40px;
+    width: 120px;
+    font-size: 14px;
+  }
+}@media screen and (max-width: 393px) {
+  
+  .profile-picture {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+
+
+  .name {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .designation {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  .description {
+    font-size: 12px;
+    max-width: 280px;
+  }
+
+  .social-links a {
+    font-size: 16px;
+    margin-top: 8px;
+  }
+
+  .wave-emoji {
+    max-width: 18px;
+    margin-left: 5px;
+  }
+
+  /* Adjust the button size */
+  button {
+    height: 38px;
+    width: 110px;
+    font-size: 12px;
+  }
+}@media screen and (min-width: 769px) and (max-width: 912px) {
+  
+  .profile-picture {
+    width: 180px;
+    margin-bottom: 15px;
+  }
+
+
+  .name {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+
+  .designation {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .description {
+    font-size: 18px;
+    max-width: 400px;
+  }
+
+  .social-links a {
+    font-size: 24px;
+    margin-top: 12px;
+  }
+
+  .wave-emoji {
+    max-width: 30px;
+    margin-left: 8px;
+  }
+
+  
+  button {
+    height: 45px;
+    width: 130px;
+    font-size: 18px;
+  }
+}
